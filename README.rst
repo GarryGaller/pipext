@@ -38,7 +38,8 @@ optional arguments:
                         0-6. By default, when using --select=all displayed
                         columns 0,1,2,6, when using --select=out - extended
                         version - 0,1,3,4,5,6 - without the Location column.
-  -C C [C ...]          List of columns to exclude.
+  -C C [C ...]          
+                        List of columns to exclude.
   --pre                 Include pre-release and development versions. By
                         default, pip only finds stable versions.
   -f FORMAT [FORMAT ...], --format FORMAT [FORMAT ...]
