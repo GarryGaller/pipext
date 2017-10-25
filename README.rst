@@ -5,20 +5,21 @@
 The extension of the functionality of pip
 -----------------------------------------
 
+::
 
->>python -m pipext --help
-usage: pipext.py [-h] [-s SELECT [SELECT ...]]
-                 [--raw RAW | -i INSTALL [INSTALL ...]]
-                 [-m MODULES [MODULES ...]] [-e EXCLUDE [EXCLUDE ...]]
-                 [--no-deps] [-c COLUMNS [COLUMNS ...] | -C C [C ...]] [--pre]
-                 [-f FORMAT [FORMAT ...] | -F NO_FORMAT]
-                 [--not-req | --not-req2] [--editable | --user | --local]
-                 [--test] [-v VERSION]
+    >>python -m pipext --help
+    usage: pipext.py [-h] [-s SELECT [SELECT ...]]
+                     [--raw RAW | -i INSTALL [INSTALL ...]]
+                     [-m MODULES [MODULES ...]] [-e EXCLUDE [EXCLUDE ...]]
+                     [--no-deps] [-c COLUMNS [COLUMNS ...] | -C C [C ...]] [--pre]
+                     [-f FORMAT [FORMAT ...] | -F NO_FORMAT]
+                     [--not-req | --not-req2] [--editable | --user | --local]
+                     [--test] [-v VERSION]
 
-Script      : pipext.py
-Author      : Gary Galler
-Copyright(C): Gary Galler, 2017.  All rights reserved
-Version     : 1.0.0
+    Script      : pipext.py
+    Author      : Gary Galler
+    Copyright(C): Gary Galler, 2017.  All rights reserved
+    Version     : 1.0.0
 
 optional arguments:
   -h, --help            show this help message and exit
