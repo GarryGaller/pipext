@@ -27,7 +27,7 @@ Command line help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   * -h, --help            show this help message and exit
 
-  * **-s SELECT [SELECT ...], --select SELECT [SELECT ...]**
+  * -s SELECT [SELECT ...], --select SELECT [SELECT ...]
                         *Module selection type:* 
 
                         * *a|all|full*: all installed (by default) modules;
