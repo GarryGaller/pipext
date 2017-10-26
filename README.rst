@@ -1,9 +1,8 @@
-==================
- pipext
-==================
+pipext
+=======
 
 The extension of the functionality of pip
------------------------------------------
+""""""""""""""""""""""""""""""""""""""""""
 
 ::
 
@@ -21,57 +20,95 @@ The extension of the functionality of pip
     Copyright(C): Gary Galler, 2017.  All rights reserved
     Version     : 1.0.0
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -s SELECT [SELECT ...], --select SELECT [SELECT ...]
-                        Module selection type: a|all|full - all installed (by
-                        default), o|out|outdated - outdated, u|up|uptodate -
-                        uptodated
-  --raw RAW             Raw options
-  -i INSTALL [INSTALL ...], --install INSTALL [INSTALL ...]
-                        List of parameters to update. u,U,upgrade:
-                        --upgrade,-U; if,if-needed: --upgrade-strategy only-
-                        if-needed; eager: --upgrade-strategy eager; f,force:
-                        --force-reinstall; i,ignore: --ignore-installed;
-  -c COLUMNS [COLUMNS ...], --columns COLUMNS [COLUMNS ...]
+Command line help
+##################
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*optional arguments:*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  * -h, --help            show this help message and exit
+
+  * **-s SELECT [SELECT ...], --select SELECT [SELECT ...]**
+                        *Module selection type:* 
+
+                        * *a|all|full*: all installed (by default) modules;
+                        * *o|out|outdated*: outdated modules;
+                        * *u|up|uptodate*: uptodated modules;
+
+  * **--raw RAW**          Raw options
+
+  * **-i INSTALL [INSTALL ...], --install INSTALL [INSTALL ...]**
+                       *List of parameters to update:*
+
+                       * *u, U, upgrade:* as --upgrade,-U; 
+                       * *if, if-needed:* as --upgrade-strategy only-if-needed;
+                       * *eager:* as --upgrade-strategy eager;
+                       * *f, force:* as --force-reinstall;
+                       * *i, ignore:* as --ignore-installed;
+
+  * **-c COLUMNS [COLUMNS ...], --columns COLUMNS [COLUMNS ...]**
                         List of the number of columns to display in the range
-                        0-6. By default, when using --select=all displayed
-                        columns 0,1,2,6, when using --select=out - extended
-                        version - 0,1,3,4,5,6 - without the Location column.
-  -C C [C ...]          
-                        List of columns to exclude.
-  --pre                 Include pre-release and development versions. By
+                        0-6. 
+                        
+                        *By default*: 
+
+                        when using **--select=all** - displayed columns 0,1,2,6,
+ 
+                        when using **--select=out** - displayed columns 0,1,3,4,5,6,
+
+                        without the *Location* column.
+
+  * **-C C [C ...]**    List of columns to exclude.
+
+  * --pre               Include pre-release and development versions. By
                         default, pip only finds stable versions.
-  -f FORMAT [FORMAT ...], --format FORMAT [FORMAT ...]
+
+  * **-f FORMAT [FORMAT ...], --format FORMAT [FORMAT ...]**
                         List of output formatting options: header|head|h - to
                         show headings, separator|sep|s - to separate lines.
-  -F NO_FORMAT, --no-format NO_FORMAT
-                        Output only a list of names. name - for standard
-                        names, egg - names in the format egg, count - output
-                        only the number of modules
-  --not-req             List packages that are not dependencies of installed
+
+  * **-F NO_FORMAT, --no-format NO_FORMAT**
+                        *Output only a list of names:* 
+
+                        * *name* - for standard names;
+ 
+                        * *egg* - names in the format egg;
+ 
+                        * *count* - output only the number of modules;
+
+  * --not-req           List packages that are not dependencies of installed
                         packages (original option).
-  --not-req2            List of packages that do not have dependencies.
-  --editable            List editable projects.
-  --user                Only output packages installed in user-site.
-  --local               If in a virtualenv that has global access, do not list
-                        globally-installed packages.
-  --test                Test options
-  -v VERSION, --version VERSION
+
+  * --not-req2           List of packages that do not have dependencies.
+
+  * --editable           List editable projects.
+
+  * --user               Only output packages installed in user-site.
+
+  * --local              If in a virtualenv that has global access, do not list globally-installed packages.
+
+  * --test               Test options
+
+  * -v VERSION, --version VERSION
                         The version of the installed module: --version pip
 
-install:
-  -m MODULES [MODULES ...], --modules MODULES [MODULES ...]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*arguments for context only*:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  * **-m MODULES [MODULES ...], --modules MODULES [MODULES ...]**
                         The list of modules to update.
-  -e EXCLUDE [EXCLUDE ...], --exclude EXCLUDE [EXCLUDE ...]
+
+  * **-e EXCLUDE [EXCLUDE ...], --exclude EXCLUDE [EXCLUDE ...]**
                         The list of modules to exclude from the update. Only
                         option -U
-  --no-deps             Don't install package dependencies.
------------------------------------------------------------------------------------
-EXAMPLES:  
------------------------------------------------------------------------------------  
-::
 
+  * --no-deps             Don't install package dependencies.
+
+---------
+EXAMPLES:  
+---------
+::
+    
+    # You can simply specify the module name: pipext --some_arg param ...
     # By default - show all modules
     >>python -m pipext
     ------------------------  ------------------  -------------------------------------------------------------------  ----------------------------------------------------------------------------------------------------
@@ -188,4 +225,4 @@ EXAMPLES:
     >>python -m pipext -s=o -i i
 
     # Using raw options - you can pass any options pip install --all_other_options
-    >>python -m pipext --raw="--upgrade --no-deps" -m some_module
+    >>python -m pipext --raw="--upgrade --no-deps" -m some_modulram
