@@ -106,12 +106,16 @@ Command line help
 
   * **--no-deps**             *Don't install package dependencies.*
 
-~~~~~~~~
-~~~~~~~~
+~~~
+~~~
 EXAMPLES:  
 =========
-~~~~~~~~
-~~~~~~~~
+
+N.B.: You can run the script from the shell just like:
+    
+    >> pipext args
+
+
 
 ```
     
@@ -232,5 +236,5 @@ EXAMPLES:
     >>python -m pipext -s=o -i i
 
     # Using raw options - you can pass any options pip install --all_other_options
-    >>python -m pipext --raw="--upgrade --no-deps" -m some_modulram
+    >>python -m pipext --raw="--upgrade --no-deps" -m some_module
 ```    
