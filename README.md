@@ -1,9 +1,11 @@
 
-#pipext
+PIPEXT
+======
 ~~~
 ~~~
 
-##The extension of the functionality of pip
+The extension of the functionality of pip
+-----------------------------------------
 ~~~
 ~~~
 
@@ -24,8 +26,10 @@
     Version     : 1.0.0
 ```
 
-###Command line help
-#####*optional arguments:*
+Command line help
+-----------------
+**optional arguments:**
+
 
   * **-h, --help**            *show this help message and exit*
 
@@ -91,7 +95,7 @@
                         `--version pip`
 
 
-#####*arguments for context only*:
+**arguments for context only:**
 
   * **-m MODULES [MODULES ...], --modules MODULES [MODULES ...]**
                         *The list of modules to update.*
@@ -104,7 +108,8 @@
 
 ~~~~~~~~
 ~~~~~~~~
-##EXAMPLES:  
+EXAMPLES:  
+=========
 ~~~~~~~~
 ~~~~~~~~
 
