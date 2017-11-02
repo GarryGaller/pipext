@@ -5,10 +5,7 @@ PIPEXT
 ~~~
 
 The extension of the functionality of pip
------------------------------------------
-~~~
-~~~
-
+---
 
 ```
     >>python -m pipext --help
@@ -28,6 +25,7 @@ The extension of the functionality of pip
 
 Command line help
 -----------------
+***
 **optional arguments:**
 
 
