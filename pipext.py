@@ -3,17 +3,19 @@
 Script      : pipext.py
 Author      : Gary Galler
 Copyright(C): Gary Galler, 2017.  All rights reserved
-Version     : 1.0.1
+Version     : 1.0.2
 Date        : 24.04.2017
 """
 #--------------------------------------
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 #--------------------------------------
 
 import os,sys
-from pip import get_installed_distributions
-from pip.utils import get_installed_version
-from pip.commands.list import ListCommand
+#from pip import get_installed_distributions
+from pip._internal.utils.misc import get_installed_distributions, get_installed_version
+#from pip.utils import get_installed_version
+#from pip.commands.list import ListCommand
+from pip._internal.commands.list import ListCommand
 import pip
 import argparse
 from pprint import pprint

@@ -16,5 +16,5 @@ setup(name = 'pipext',
       py_modules = ['pipext'],
       entry_points = {'console_scripts':['pipext = pipext:main','pipext' + ver + ' = pipext:main']},
       include_package_data = True,
-      install_requires = ['pip>=9.0.1']
+      install_requires = ['pip>=10.0.0']
       )
