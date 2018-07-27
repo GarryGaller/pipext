@@ -1,13 +1,14 @@
 #--------------------------------------
 """
 Script      : pipext.py
-Author      : Gary Galler
-Copyright(C): Gary Galler, 2017.  All rights reserved
+Author      : Garry Galler
+Copyright(C): Garry Galler, 2017.  All rights reserved
 Version     : 1.0.2
-Date        : 24.04.2017
+Date        : 27.07.2017
 """
 #--------------------------------------
 __version__ = '1.0.2'
+__author__ = 'Garry Galler'
 #--------------------------------------
 
 import os,sys
@@ -169,9 +170,11 @@ sys.excepthook = on_exit_by_ctrl_c
 def argument_parse(argv=None):
     description = """
 Script      : %(prog)s
-Author      : Gary Galler
-Copyright(C): Gary Galler, 2017.  All rights reserved
-Version     : 1.0.0"""
+Author      : {author}
+Copyright(C): {author}, 2017.  All rights reserved
+Version     : {version}""" .format(
+    author=__author__,version= __version__
+)
     
     parser = argparse.ArgumentParser(
         formatter_class = argparse.RawDescriptionHelpFormatter,
