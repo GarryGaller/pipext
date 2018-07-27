@@ -20,7 +20,7 @@ The extension of the functionality of pip
     Script      : pipext.py
     Author      : Gary Galler
     Copyright(C): Gary Galler, 2017.  All rights reserved
-    Version     : 1.0.0
+    Version     : 1.0.2
 ```
 
 Command line help
